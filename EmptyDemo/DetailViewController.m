@@ -23,7 +23,7 @@
             V2TIMSDKConfig *config = [[V2TIMSDKConfig alloc] init];
             config.logLevel = V2TIM_LOG_DEBUG;
 
-            BOOL ret = [[V2TIMManager sharedInstance] initSDK:111111 config:nil listener:self];
+            BOOL ret = [[V2TIMManager sharedInstance] initSDK:111111 config:config listener:self];
             NSLog(@"初始化结果：%d", ret);
 
             self.didInitSDK = YES;
